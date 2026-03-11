@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+    <style>
+        /* 글꼴 */
+        .schoolbell-regular {
+            font-family: "Schoolbell", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .gaegu-regular {
+            font-family: "Gaegu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .dis {
+            font-size: 280px;
+            margin-top: 250px;
+        }
+        .m-font {
+            font-size: 40px;
+        }
+        .m-font:first-child {
+            font-size: 50px;
+        }
+        #intr-h {
+            font-size: 80px;
+            margin: 0 0 0 0;
+            text-align: center;
+        }
+        .b {
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 70px;
+            text-align: center;
+            margin-top: 10%;
+        }
+        .listB {
+            font-size: 35px;
+            text-align: center;
+            margin: 0 0 0 0;
+        }
+
+        .b2 {
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        .listB2 {
+            font-size: 25px;
+            margin: 0 0 0 0;
+        }
+
+
+        /* div css */
+        .ppt-size {
+            width: 1920px;
+            height: 1080px;
+            border: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fefcf9;
+        }
+        .box {
+            width: 1710.8px;
+            height: 945.6px;
+            background-color: #ffffff;
+        }
+        .top {
+            width: 1660.8px;
+            height: 40px;
+            position: relative;
+            left: 30px;
+            display: flex;
+        }
+        .mbox {
+            width: 420px;
+            height: 40px;
+            border: solid 8px #333231;
+            border-radius: 30px 30px 0 0;
+            border-bottom: solid 0 white;
+        }
+        .mid {
+            width: 1710.8px;
+            height: 100px;
+            border: solid 10px #333231;
+            border-bottom: solid 0 white;
+            border-radius: 50px 50px 0 0;
+        }
+        .h {
+            width: 1680.8px;
+            height: 100px;
+            display: flex;
+            gap: 50px;
+            left: 30px;
+            position: relative;
+        }
+        .h>p {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        .radius-bl {
+            border-radius: 30px;
+            background-color: #333231;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            width: 300px;
+            height: 50px;
+            margin: 25px 0;
+            font-size: 30px;
+            left: 77%;
+            position: absolute;
+        }
+        .main {
+            width: 1710.8px;
+            height: 795px;
+            border: solid 10px #333231;
+            border-radius: 0 0 50px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #img-main {
+            position: absolute;
+            margin: 0 0 -310px 800px;
+        }
+        .main>img {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            left: 605px;
+            top: 565px;
+        }
+
+        #list {
+            display: flex;
+            gap: 150px;
+        }
+        #list>div {
+            margin-bottom: 10%;
+        }
+        .img-box {
+            width: 600px;
+            height: 300px;
+            border: solid #333231;
+            border-radius: 40px;
+        }
+        .r {
+            width: 20px;
+            height: 20px;
+            border: solid #333231;
+            border-radius: 100%;
+            position: relative;
+            top: 7%;
+            left: 90%;
+            text-align: center;
+        }
+        .img-box>img {
+            width: 500px;
+            height: 220px;
+            border-radius: 40px;
+            margin: 30px 50px;
+        }
+
+        #carList>div {
+            border-style: none none dashed;
+            width: 800px;
+            height: 100px;
+            display: flex;
+        }
+        #carList>div>div {
+            width: 50px;
+            height: 50px;
+            border: solid 1px;
+            border-radius: 100%;
+            position: relative;
+            top: 25%;
+            text-align: center;
+            font-size: 40px;
+            background-color: #fdc66c;
+        }
+        #carList>div>p {
+            font-size: 35px;
+            margin: 30px 0 30px 10px;
+        }
+        #carList {
+            position: relative;
+            bottom: -50px;
+        }
+        .carPos {
+            height: 700px;
+        }
+        #career {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        #flower {
+            margin-top: 150px;
+            margin-right: 30px;
+        }
+        #dal {
+            margin-top: 350px;
+            margin-left: -25px;
+        }
+
+        #list2 {
+            display: flex;
+            gap: 70px;
+        }
+        #list2>div>.img-box {
+            width: 490px;
+            height: 300px;
+            border: solid #333231;
+            border-radius: 40px;
+        }
+        #list2>div>.img-box>img {
+            width: 450px;
+            height: 220px;
+            border-radius: 40px;
+            margin: 30px 20px;
+        }
+        .w {
+            margin: 10% 10% 0 10%;
+        }
+
+        #sBox {
+            width: 1000px;
+            height: 420.3px;
+            border: solid 10px #333231;
+            border-radius: 40px;
+            background-color: #ffffff;
+        }
+        
+        #sBox>p:first-child {
+            font-size: 80px;
+            margin: 50px 0 20px 0;
+        }
+        #sBox>p {
+            font-size: 50px;
+            margin: 20px 0 0 0;
+            text-align: center;
+        }
+        #sBox>div {
+            width: 1000px;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        #sBox>div>div:first-child {
+            width: 70px;
+            height: 70px;
+            border: solid 6px #333231;
+            border-radius: 100%;
+        }
+        #sBox>div>div:first-child>p {
+            text-align: center;
+            font-size: 40px;
+            margin: 15px 0 0 0;
+        }
+        #sBox>div>div:last-child {
+            width: 700px;
+            border: solid #333231;
+        }
+        .radius {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #333231;
+            position: relative;
+            left: 15%;
+        }
+        #last {
+            position: relative;
+            left: 67%;
+            bottom: 120%;
+        }
+    </style>
+</head>
+<body>
+    <div class="ppt-size">
+        <div class="box">
+            <div class="top">
+                <div class="mbox"></div>
+                <div class="mbox"></div>
+            </div>
+            <div class="mid">
+                <div class="h">
+                    <p class="gaegu-regular m-font">< ></p>
+                    <p class="gaegu-regular m-font">#폴리텍데이터분석과 #박수현</p>
+                    <div class="schoolbell-regular radius-bl">@park_soo_hyeon</div>
+                </div>
+            </div>
+            <div class="main">
+                <img src="./img/cloud.webp">
+                <div>
+                    <p class="schoolbell-regular dis">Portfolio</p>
+                </div>
+                <div id="img-main">
+                    <img src="./img/main.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="ppt-size">
+        <div class="box">
+            <div class="top">
+                <div class="mbox"></div>
+                <div class="mbox"></div>
+            </div>
+            <div class="mid">
+                <div class="h">
+                    <p class="gaegu-regular m-font">< ></p>
+                    <p class="gaegu-regular m-font">#내가_누군지_궁금해? #나를_소개할게</p>
+                    <div class="schoolbell-regular radius-bl">@park_soo_hyeon</div>
+                </div>
+            </div>
+            <div class="main" style="gap: 100px;">
+                <div>
+                    <img src="./img/introduce.svg">
+                </div>
+                <div class="gaegu-regular">
+                    <p id="intr-h">
+                        About Me, <br>
+                        나를 소개할게!
+                    </p>
+                    <p class="b">
+                        이름: 박수현 <br>
+                        나이: 24살 (03년생) <br>
+                        MBTI: ENFP <br>
+                        학과: 컴퓨터소프트웨어공학과
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="ppt-size">
+        <div class="box">
+            <div class="top">
+                <div class="mbox"></div>
+                <div class="mbox"></div>
+            </div>
+            <div class="mid">
+                <div class="h">
+                    <p class="gaegu-regular m-font">< ></p>
+                    <p class="gaegu-regular m-font">#내가_좋아하는것 #들어볼래?</p>
+                    <div class="schoolbell-regular radius-bl">@park_soo_hyeon</div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="gaegu-regular">
+                    <h1>내가 좋아하는 것들</h1>
+                    <div id="list">
+                        <div>
+                            <div class="img-box">
+                                <div class="r">X</div>
+                                <img src="./img/dog.png">
+                            </div>
+                            <p class="b">대박이</p>
+                            <p class="listB">
+                                특징: 귀엽고 성격이 드럽다. <br>
+                                나이가 많다. (14살)
+                            </p>
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <div class="r">X</div>
+                                <img src="./img/youtube.png">
+                            </div>
+                            <p class="b">유튜브 시청</p>
+                            <p class="listB">
+                                집에 와서 씻고 자기 전 <br>
+                                유튜브 시청이 유일한 낙..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="ppt-size">
+        <div class="box">
+            <div class="top">
+                <div class="mbox"></div>
+                <div class="mbox"></div>
+            </div>
+            <div class="mid">
+                <div class="h">
+                    <p class="gaegu-regular m-font">< ></p>
+                    <p class="gaegu-regular m-font">#나의_경력_장점 #궁금하지_않니?</p>
+                    <div class="schoolbell-regular radius-bl">@park_soo_hyeon</div>
+                </div>
+            </div>
+            <div class="main">
+                <div id="flower"><img src="./img/flower.png"></div>
+                <div class="gaegu-regular carPos">
+                    <div id="career">
+                        <h1>나의 경력 및 장점</h1>
+                        <img src="./img/music.png">
+                    </div>
+                    <div id="carList">
+                        <div>
+                            <div>1</div>
+                            <p>밝고 긍정적인 소통 능력</p>
+                        </div>
+                        <div>
+                            <div>2</div>
+                            <p>관련 자격증 소유</p>
+                        </div>
+                        <div>
+                            <div>3</div>
+                            <p>여러 개의 개발 관련 대회에서 수상</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dal"><img src="./img/dal.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="ppt-size">
+        <div class="box">
+            <div class="top">
+                <div class="mbox"></div>
+                <div class="mbox"></div>
+            </div>
+            <div class="mid">
+                <div class="h">
+                    <p class="gaegu-regular m-font">< ></p>
+                    <p class="gaegu-regular m-font">#내가_경력_소개 #개발자 #팀장</p>
+                    <div class="schoolbell-regular radius-bl">@park_soo_hyeon</div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="gaegu-regular">
+                    <div id="list2">
+                        <div>
+                            <div class="img-box">
+                                <div class="r">X</div>
+                                <img src="./img/expo.png">
+                            </div>
+                            <div class="w">
+                                <p class="b2">2024동양미래EXPO</p>
+                                <p class="listB2">
+                                    컴퓨터비전AI손재활 및 발달 운동 플랫폼 <br>
+                                    대상수상
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <div class="r">X</div>
+                                <img src="./img/project.png">
+                            </div>
+                            <div class="w">
+                                <p class="b2">졸업작품프로젝트</p>
+                                <p class="listB2">
+                                    실시간원격 및 협업 플랫폼 <br>
+                                    우수상(전체 2등)
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <div class="r">X</div>
+                                <img src="./img/game.png">
+                            </div>
+                            <div class="w">
+                                <p class="b2">컴퓨터공학부 경진대회</p>
+                                <p class="listB2">
+                                    화재재난대피훈련시뮬레이션 <br>
+                                    (3D 게임) <br>
+                                    우수상(전체 2등)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="ppt-size">
+        <div id="sBox">
+            <p class="schoolbell-regular">THANK YOU</p>
+            <p class="gaegu-regular m-font">
+                함께한 시간이 즐거웠길 바라. <br>
+                이 시간이 너에게 영감을 주었기를 소망해.
+            </p>
+            <div>
+                <div><p>▶</p></div>
+                <div class="radius"></div>
+                <div><div>
+            </div>
+        </div>
+    </div>
+    <img id="last" src="./img/duck.png">
+</body>
+</html>
